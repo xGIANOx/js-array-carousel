@@ -38,6 +38,11 @@ const images = [
     currentSlide.classList.remove('active')
     
     activeImage++
+
+    if (activeImage >= images.length) {
+      activeImage = 0;
+    }
+
     
     console.log(activeImage);
     const nextImage = slideImagesElements[activeImage]
@@ -61,6 +66,10 @@ const images = [
     currentSlide.classList.remove('active')
     
     activeImage--
+
+    if (activeImage < 0) {
+      activeImage = images.length - 1;
+    }
     
     console.log(activeImage);
     const nextImage = slideImagesElements[activeImage]
