@@ -1,0 +1,24 @@
+
+    
+.images img:not(.active) {
+      display: none;
+}
+.prev,
+.next{
+    cursor: pointer;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
